@@ -1,0 +1,82 @@
+/* Top NavBar Css */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    position: fixed;
+}
+.logo img{
+    width: 150px;
+    height: 70px;
+}
+.search-con{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    margin: 5px;
+    width: 50vw;
+}
+.search-bar input{
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 30px;
+    max-width: 40vw;
+    width: 100%;
+}
+
+/* sideNavbar Css  */
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(151, 147, 147);
+    border-radius: 15px;
+}
+
+.side-nav-con{
+    position: fixed;
+    top: 5pc;
+    left: 0;
+    height: 85%;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.side-top-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.side-top-con a{
+    padding: 1pc 3pc;
+    /* border: 1px solid; */
+}
+.side-account-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.side-account-con a{
+    padding: 1pc 3pc;
+}
+.show-more button{
+    border: none;
+    background: none;
+    padding: 1pc 3pc;
+    font-size: 16px;
+}
+.side-explore-con .explore-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.explore-con a{
+    padding: 1pc 3pc;
+}

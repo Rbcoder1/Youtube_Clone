@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+
+    <!-- css files  -->
+    <link rel="stylesheet" href="./assets/css/Global.css">
+    <link rel="stylesheet" href="./assets/css/Header.css">
+    <link rel="stylesheet" href="./assets/css/MainContent.css">
+</head>
+
+<body>
+    <!-- Navigation Bar  -->
+    <!-- Top NavBar  -->
+    <header>
+        <nav class="navbar">
+            <div class="left-con">
+                <div class="ha mburger"></div>
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="search-con">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="voice">
+
+                </div>
+            </div>
+            <div class="right-con"></div>
+        </nav>
+    </header>
+
+    <!-- Side NavBar  -->
+    <div class="side-nav-con">
+        <div class="scrollbox">
+            <div class="side-top-con">
+                <a href="/">Home</a>
+                <a href="/shorts">Shorts</a>
+                <a href="/subscriptions">Subscriptions</a>
+            </div>
+            <hr>
+            <div class="side-account-con">
+                <h2 class="heading-side">You ></h2>
+                <a href="">Your Channel</a>
+                <a href="">History</a>
+                <a href="">Your Videos</a>
+                <a href="">Watch Later</a>
+                <div class="show-more">
+                    <button>show more</button>
+                    <div class="playlists" id="playlist">
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="side-subscription-con">
+                <h2 class="heading-side">Subscriptions</h2>
+                <div class="subscrib-list" id="subscriblist">
+
+                </div>
+            </div>
+            <hr>
+            <div class="side-explore-con">
+                <h2 class="heading-side">Explore</h2>
+                <div class="explore-con">
+                    <a href="">Trending</a>
+                    <a href="">Shopping</a>
+                    <a href="">Music</a>
+                    <a href="">Film</a>
+                    <a href="">New</a>
+                    <a href="">Sports</a>
+                    <a href="">Learning</a>
+                </div>
+            </div>
+            <div class="side-more-con"></div>
+        </div>
+    </div>
+
+    <!-- main content  -->
+    <section class="main-content">
+        <div class="contentcontainer" >
+            <div class="videos" id="mainContent">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Script Files  -->
+    <script type="module" src="./assets/js/ui.js"></script>
+    <script type="module" src="./assets/js/ApplicationState.js"></script>
+    <script type="module" src="./assets/js/events.js"></script>
+    <script type="module" src="./assets/js/LogicFunction.js"></script>
+</body>
+
+</html>
