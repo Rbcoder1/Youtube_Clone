@@ -6,6 +6,7 @@
     justify-content: space-between;
     padding: 2px;
     position: fixed;
+    width: 100%;
 }
 .logo img{
     width: 150px;
@@ -28,6 +29,18 @@
     max-width: 40vw;
     width: 100%;
 }
+.left-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2pc;
+}
+.left-con .hamburger{
+    margin: 0 1pc;
+}
+.right-con{
+    padding: .3pc 3pc;
+}
 
 /* sideNavbar Css  */
 
@@ -44,18 +57,26 @@
     top: 5pc;
     left: 0;
     height: 85%;
-    width: 15vw;
+    width: 7vw;
     display: flex;
     flex-direction: column;
     overflow: auto;
+    align-items: center;
 }
 .side-top-con{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.explore-con a{
+    padding: 1pc 3pc;
+    text-decoration: none;
+    color: white;
+}
 .side-top-con a{
     padding: 1pc 3pc;
+    text-decoration: none;
+    color: white;
     /* border: 1px solid; */
 }
 .side-account-con{

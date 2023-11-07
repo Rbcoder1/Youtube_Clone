@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="./assets/css/Global.css">
     <link rel="stylesheet" href="./assets/css/Header.css">
     <link rel="stylesheet" href="./assets/css/MainContent.css">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,20 +23,26 @@
     <header>
         <nav class="navbar">
             <div class="left-con">
-                <div class="ha mburger"></div>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
                 <div class="logo">
-                    <img src="./assets/img/logo.png" alt="" srcset="">
+                    <!-- <img src="./assets/img/logo.png" alt="" srcset=""> -->
+                    <h3 style="color: red;">YouTube</h3>
                 </div>
             </div>
             <div class="search-con">
                 <div class="search-bar">
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search" id="videoSearchField">
+                    <button id="videoSearch">search</button>
                 </div>
                 <div class="voice">
 
                 </div>
             </div>
-            <div class="right-con"></div>
+            <div class="right-con">
+                <button class="btn-signin" id="btnsignin">
+                    <a href="./auth.html">Sign In</a>
+                </button>
+            </div>
         </nav>
     </header>
 
@@ -39,42 +50,20 @@
     <div class="side-nav-con">
         <div class="scrollbox">
             <div class="side-top-con">
-                <a href="/">Home</a>
-                <a href="/shorts">Shorts</a>
-                <a href="/subscriptions">Subscriptions</a>
+                <a href="/"><i class="fa-solid fa-house"></i></a>
+                <a href="#" id="shortsBtn"><i class="fa-solid fa-play"></i></a>
+                <a href="#" id="subscriptionsBtn"><i class="fa-solid fa-users"></i></a>
             </div>
-            <hr>
-            <div class="side-account-con">
-                <h2 class="heading-side">You ></h2>
-                <a href="">Your Channel</a>
-                <a href="">History</a>
-                <a href="">Your Videos</a>
-                <a href="">Watch Later</a>
-                <div class="show-more">
-                    <button>show more</button>
-                    <div class="playlists" id="playlist">
-
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="side-subscription-con">
-                <h2 class="heading-side">Subscriptions</h2>
-                <div class="subscrib-list" id="subscriblist">
-
-                </div>
-            </div>
-            <hr>
+            <!-- <hr> -->
             <div class="side-explore-con">
-                <h2 class="heading-side">Explore</h2>
                 <div class="explore-con">
-                    <a href="">Trending</a>
-                    <a href="">Shopping</a>
-                    <a href="">Music</a>
-                    <a href="">Film</a>
-                    <a href="">New</a>
-                    <a href="">Sports</a>
-                    <a href="">Learning</a>
+                    <a href="#"><i class="fa-solid fa-arrow-trend-up"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-music"></i></a>
+                    <a href="#"><i class="fa-solid fa-film"></i></a>
+                    <a href="#"><i class="fa-solid fa-newspaper"></i></a>
+                    <a href="#"><i class="fa-solid fa-baseball-bat-ball"></i></a>
+                    <a href="#"><i class="fa-solid fa-chalkboard"></i></a>
                 </div>
             </div>
             <div class="side-more-con"></div>
@@ -82,10 +71,15 @@
     </div>
 
     <!-- main content  -->
-    <section class="main-content">
-        <div class="contentcontainer" >
+    <section class="main-content" id="MainSection">
+        <div class="contentcontainer">
+            <div class="categorycon">
+                <div class="listcategory" id="listcategory">
+                    
+                </div>
+            </div>
             <div class="videos" id="mainContent">
-                
+
             </div>
         </div>
     </section>
